@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --branco: #FFF;
+    --azul-claro: #DFE3E5;
+    --vermelho-forte: #B72E2E;
+    --cinza-escuro: #4F4C4C;
+    --cinza-claro: #F7F4F4;
+    --cinza-medio: #D9D9D9;
+        
+    --fonte-link: #0084FF;
+    --fonte-cinza: #666;
+    --borda-cabecalho-mobile: #103D4A;
+    --bg-rodape: #333;
+    --bg-chamada-mobile: #00161C;
+
+    --planos-cartao-start: #56CCF2;
+    --planos-cartao-ultra: #B04CD9;
+    --planos-cartao-mega: #E33B3B;
+
+    --fonte-primaria: "Montserrat", serif;
+    --fonte-secundaria: "Open Sans", serif;
+}
+
+body {
+    color: white;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+.header__img {
+    display: block;
+    margin: auto;
+    padding: 12px 0 25px 0;
+}
+
+.header__navigation {
+    font-family: var(--fonte-secundaria);
+}
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 26px;
+    font-size: 17px;
+    padding-bottom: 21px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.header-linha-horizontal {
+    border: 1px solid var(--borda-cabecalho-mobile);
+}
+
+/* Seção Aplicativos */
+
+.section__aplicativos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aplicativos__titulo {
+    text-align: center;
+    padding: 31px 0 28px 0;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: var(--fonte-primaria);
+    text-transform: uppercase;
+}
+
+.aplicativos__texto {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    line-height: 27px;
+    width: 85%;
+    padding-bottom: 40px;
+    font-family: var(--fonte-secundaria);
+}
+
+.aplicativos__botao {
+    width: 330px;
+    height: 50px;
+    margin: auto;
+    background-color: transparent;
+    border: 1px solid var(--branco);
+    border-radius: 5px;
+    color: var(--branco);
+    font-size: 15px;
+}
+
+/* Seção Destaques */
+
+.section__destaques {
+    background-color: #DFE3F5;
+    font-family: var(--fonte-secundaria);
+    color: black;
+    padding: 37px 0 32px 0;
+}
+
+.destaques__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.destaques__titulo {
+    color: var(--cinza-escuro);
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--fonte-primaria);
+    padding-bottom: 35px;
+}
+
+.destaques__itens {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 34px;
+}
+
+.destaques__img01, .destaques__img02 {
+    width: 375px;
+    height: 183px;
+}
+
+.destaques__text01, .destaques__text02 {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 90%;
+    padding-left: 23px;
+}
+
+.destaques__botao {
+    width: 330px;
+    height: 50px;
+    border: 1px solid var(--vermelho-forte);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--vermelho-forte);
+}
+
+
+
+@media (min-width: 768px) {
+    .header__list {
+        gap: 27px;
+        padding-bottom: 58px;
+    }
+    .aplicativos__texto {
+        text-indent: 15px;
+        width: 68%;
+    }
+
+    .aplicativos__botao {
+        width: 350px;
+        height: 50px;
+    }
+
+    /* Seção destaques */
+
+    .destaques__img01 {
+        width: 564px;
+        height: 275px;
+    }
+
+    .destaques__img02 {
+        width: 542px;
+        height: 266px;
+    }
+
+    .destaques__text01, .destaques__text02 {
+        width: 100%;
+        padding: 0;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .header {
+        background-image: url(./imagens/Rectangle.svg);
+        background-repeat: no-repeat;
+        background-size: 110%;
+        background-position: center center;
+    }
+    
+    .header__navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 25px;
+    }
+
+    .header__img {
+        padding: 0 0 0 41px;
+    }
+
+    .header__list {
+        padding: 0 54px 0 0;
+    }
+
+    .header-linha-horizontal {
+        display: none;
+    }
+
+    .aplicativos__titulo {
+        padding: 80px 0 38px 0;
+        padding-top: 80px;
+        font-size: 52px;
+    }
+
+    .aplicativos__texto {
+        width: 50%;
+        text-indent: 15px;
+    }
+
+    /* Seção destaques */
+
+    .destaques__img01 {
+        width: 564px;
+        height: 275px;
+    }
+
+    .destaques__img02 {
+        width: 542px;
+        height: 266px;
+    }
+
+    .destaques__text01, .destaques__text02 {
+        width: 100%;
+        padding: 0;
+    }
+}
