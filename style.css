@@ -33,6 +33,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-bottom: 40px;
+    background-color: var(--bg-chamada-mobile);
 }
 
 .header__img {
@@ -191,12 +192,6 @@ nav ul li a {
 }
 
 @media (min-width: 1024px) {
-    .header {
-        background-image: url(./imagens/Rectangle.svg);
-        background-repeat: no-repeat;
-        background-size: 110%;
-        background-position: center center;
-    }
     
     .header__navigation {
         display: flex;
