@@ -243,6 +243,36 @@ nav ul li a {
         padding: 0;
     }
 
+    /* Seção Habilidade */
+
+    .section__habilidades {
+        
+    }
+    
+    .habilidades__list {
+        grid-template-columns: 45%;
+    }
+    
+    .habilidades__items {
+        
+    }
+    
+    .habilidades__alinhamento {
+        
+    }
+    
+    .habilidades__img {
+        
+    }
+    
+    .habilidades__titulos {
+        
+    }
+    
+    .habilidades__textos {
+        
+    }
+
 }
 
 
