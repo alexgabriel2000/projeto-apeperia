@@ -129,6 +129,8 @@ nav ul li a {
 .destaques__itens {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 8px;
     padding-bottom: 34px;
 }
@@ -143,7 +145,7 @@ nav ul li a {
     font-weight: 400;
     line-height: 26px;
     width: 90%;
-    padding-left: 23px;
+    
 }
 
 .destaques__botao {
@@ -155,6 +157,58 @@ nav ul li a {
     color: var(--vermelho-forte);
 }
 
+/* Seção Habilidades */
+
+.section__habilidades {
+    color: var(--cinza-escuro);
+    font-family: var(--fonte-secundaria);
+    padding: 24px 0 64px 0;
+}
+
+.habilidades__list {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 75%;
+}
+
+.habilidades__items {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.habilidades__alinhamento {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    gap: 10px;
+}
+
+.habilidades__img {
+    width: 32px;
+    height: 40px;
+}
+
+.habilidades__titulos {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.habilidades__textos {
+    padding-left: 42px;
+    font-weight: 400;
+    line-height: 22px;
+    width: 95%;
+}
+
+
+
+@media (min-width: 375px) {
+    .destaques__img01, .destaques__img02 {
+        width: 100%;
+    }
+}
 
 
 @media (min-width: 768px) {
@@ -190,6 +244,8 @@ nav ul li a {
     }
 
 }
+
+
 
 @media (min-width: 1024px) {
     
