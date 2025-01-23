@@ -245,34 +245,10 @@ nav ul li a {
 
     /* Seção Habilidade */
 
-    .section__habilidades {
-        
-    }
-    
     .habilidades__list {
         grid-template-columns: 45%;
     }
     
-    .habilidades__items {
-        
-    }
-    
-    .habilidades__alinhamento {
-        
-    }
-    
-    .habilidades__img {
-        
-    }
-    
-    .habilidades__titulos {
-        
-    }
-    
-    .habilidades__textos {
-        
-    }
-
 }
 
 
@@ -325,4 +301,40 @@ nav ul li a {
         width: 100%;
         padding: 0;
     }
+
+    /* Seção Habilidades */
+
+    .section__habilidades {
+        background-color: var(--cinza-claro);
+    }
+
+    .habilidades__items {
+        width: 70%;
+    }
+
+    .habilidades__grid01 {
+        grid-area: tempo;
+        justify-self: center;
+    }
+
+    .habilidades__grid02 {
+        grid-area: foco;
+        justify-self: center;
+    }
+
+    .habilidades__grid03 {
+        grid-area: especialistas;
+        width: 32%;
+        justify-self: center;
+    }
+
+    .habilidades__list {
+        grid-template-areas:
+        "tempo tempo foco foco"
+        "especialistas especialistas especialistas especialistas";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    
 }
