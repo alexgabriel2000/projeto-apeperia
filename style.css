@@ -251,6 +251,93 @@ nav ul li a {
     display: none;
 }
 
+/* Section Planos */
+
+.section__planos {
+    font-family: var(--fonte-secundaria);
+    background-color: var(--cinza-claro);
+    padding: 45px 0 80px 0;
+}
+
+.planos__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 37px;
+}
+
+.planos__title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: var(--fonte-primaria);
+    color: var(--cinza-escuro);
+    text-align: center;
+    padding-bottom: 23px;
+    
+}
+
+.planos__barra-horizontal {
+    width: 100%;
+    border: 1px solid var(--azul-claro);
+}
+
+.planos__title-start, .planos__price-start, .planos__button-start {
+    color: var(--planos-cartao-start);
+    font-weight: bold;
+}
+
+.planos__card-start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--branco);
+    padding: 13px 0 16px 0;
+    border-radius: 5px;
+}
+
+.planos__title-start {
+    font-size: 24px;
+}
+
+.planos__price-start {
+    padding-top: 10px;
+    font-size: 3rem;
+}
+
+.planos__align-text {
+    padding: 30px 0 16px 0;
+    margin: auto;
+}
+
+.planos__button-start {
+    border: 1px solid var(--planos-cartao-start);
+    background-color: transparent;
+    width: 210px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 19px;
+}
+
+.planos__vantagens-text {
+    font-size: 15px;
+    line-height: 28px;
+    color: var(--fonte-cinza);
+    text-align: start;
+    
+}
+
+.planos__card-ultra {
+    width: 100%;
+    background-color: var(--branco);
+}
+
+.planos__card-mega {
+    width: 100%;
+    background-color: var(--branco);
+}
+
 
 @media (min-width: 375px) {
     .destaques__img01, .destaques__img02 {
