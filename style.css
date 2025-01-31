@@ -325,12 +325,38 @@ nav ul li a {
     line-height: 28px;
     color: var(--fonte-cinza);
     text-align: start;
-    
 }
 
-.planos__card-ultra {
+.planos__card-ultra { /*  Fazendo agora */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 13px 0 16px 0;
     width: 100%;
     background-color: var(--branco);
+}
+
+.planos__title-ultra {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--planos-cartao-ultra);
+}
+
+.planos__price-ultra {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--planos-cartao-ultra);
+}
+
+.planos__button-ultra {
+    width: 210px;
+    height: 45px;
+    background-color: transparent;
+    border: 1px solid var(--planos-cartao-ultra);
+    color: var(--planos-cartao-ultra);
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 .planos__card-mega {
