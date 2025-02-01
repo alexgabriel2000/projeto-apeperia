@@ -454,6 +454,12 @@ nav ul li a {
     .sobre__items-imgs {
         gap: 103px;
     }
+
+    /* Seção Planos */
+
+    .planos__card-start, .planos__card-ultra, .planos__card-mega {
+        width: 60%;
+    }
     
 }
 
