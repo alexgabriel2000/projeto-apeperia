@@ -559,5 +559,13 @@ nav ul li a {
         display: block;
         padding-right: 42px;
     }
+
+    /* Seção Planos */
+
+    .planos__list {
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+    }
     
 }
