@@ -425,6 +425,63 @@ nav ul li a {
     color: var(--cinza-escuro);
 }
 
+/* Seção informações */
+
+.section__info {
+    padding: 61px 0 0 0;
+    font-family: var(--fonte-secundaria);
+}
+
+.info__title {
+    font-family: var(--fonte-primaria);
+    font-size: 24px;
+    color: var(--cinza-escuro);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+.info__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.info__text {
+    font-size: 15px;
+}
+
+.info__endereco-rua {
+    font-size: 23px;
+    line-height: 34.6px;
+}
+
+.info__endereco-cidade {
+    font-size: 24px;
+}
+
+.info__numero-de-telefone {
+    font-size: 19px;
+}
+
+.info__link {
+    font-size: 19px;
+    color: var(--fonte-link);
+    line-height: 34.6px;
+    text-decoration: none;
+}
+
+.info__text, .info__endereco-rua, .info__endereco-cidade, .info__numero-de-telefone {
+    color: var(--fonte-cinza);
+    text-align: center;
+}
+
+.info__img {
+    padding-top: 42px;
+}
+
 @media (min-width: 375px) {
     .destaques__img01, .destaques__img02 {
         width: 100%;
