@@ -428,7 +428,10 @@ nav ul li a {
 /* Seção informações */
 
 .section__info {
-    padding: 61px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 61px 0 25px 0;
     font-family: var(--fonte-secundaria);
 }
 
@@ -479,6 +482,7 @@ nav ul li a {
 }
 
 .info__img {
+    width: 100%;
     padding-top: 42px;
 }
 
@@ -548,6 +552,20 @@ nav ul li a {
     .planos__card-start, .planos__card-ultra, .planos__card-mega {
         width: 60%;
     }
+
+    /* Seção Informações */
+
+    .info__img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .info__div-tel-email {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+
     
 }
 
@@ -651,9 +669,7 @@ nav ul li a {
     /* Seção Planos */
 
     .planos__list {
-        display: flex;
-        flex-direction: row;
-        align-items: end;
+        
     }
     
 }
