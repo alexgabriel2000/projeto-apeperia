@@ -486,6 +486,47 @@ nav ul li a {
     padding-top: 42px;
 }
 
+/* Seção Rodapé */
+
+.section__rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0 43px 0;
+    background-color: var(--bg-rodape);
+    font-family: var(--fonte-secundaria);
+}
+
+.rodape__flex {
+
+}
+
+.rodape__img {
+    padding-bottom: 50px;
+}
+
+.rodape__list-logo {
+    display: flex;
+    align-items: center;
+    padding-bottom: 32px;
+    gap: 32px;
+}
+
+.rodape__list-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 50px;
+    column-gap: 23px;
+    row-gap: 40px;
+}
+
+.rodape__list-links li a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
 @media (min-width: 375px) {
     .destaques__img01, .destaques__img02 {
         width: 100%;
