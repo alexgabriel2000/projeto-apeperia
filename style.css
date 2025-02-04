@@ -498,7 +498,7 @@ nav ul li a {
 }
 
 .rodape__flex {
-
+    
 }
 
 .rodape__img {
@@ -737,4 +737,30 @@ nav ul li a {
         height: 210px;
     }
     
+    /* Seção Rodapé */
+
+    .section__rodape {
+        padding: 0 58px 43px 42px;
+    }
+
+    .rodape__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .rodape__img {
+        padding: 71px 0 32px 0;
+    }
+
+    .rodape__list-logo {
+        padding: 71px 0 32px 0;
+    }
+
+    .rodape__list-links {
+        
+        align-self: start;
+        padding: 0;
+    }
 }
