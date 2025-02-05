@@ -26,8 +26,10 @@
 
 body {
     color: white;
+    font-family: var(--fonte-secundaria);
 }
 
+/* Seção Cabeçalho */
 
 .header {
     display: flex;
@@ -40,10 +42,6 @@ body {
     display: block;
     margin: auto;
     padding: 12px 0 25px 0;
-}
-
-.header__navigation {
-    font-family: var(--fonte-secundaria);
 }
 
 .header__list {
@@ -89,7 +87,6 @@ nav ul li a {
     line-height: 27px;
     width: 85%;
     padding-bottom: 40px;
-    font-family: var(--fonte-secundaria);
 }
 
 .aplicativos__botao {
@@ -107,12 +104,11 @@ nav ul li a {
 
 .section__destaques {
     background-color: #DFE3F5;
-    font-family: var(--fonte-secundaria);
     color: black;
     padding: 37px 0 32px 0;
 }
 
-.destaques__list {
+.destaques__list, .destaques__itens {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,10 +123,7 @@ nav ul li a {
 }
 
 .destaques__itens {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 8px;
     padding-bottom: 34px;
 }
@@ -145,7 +138,6 @@ nav ul li a {
     font-weight: 400;
     line-height: 26px;
     width: 90%;
-    
 }
 
 .destaques__botao {
@@ -161,7 +153,6 @@ nav ul li a {
 
 .section__habilidades {
     color: var(--cinza-escuro);
-    font-family: var(--fonte-secundaria);
     padding: 24px 0 64px 0;
 }
 
@@ -223,7 +214,6 @@ nav ul li a {
     flex-direction: column;
     gap: 16px;
     padding-right: 26px;
-    font-family: var(--fonte-secundaria);
     padding-left: 26px;
 }
 
@@ -254,7 +244,6 @@ nav ul li a {
 /* Section Planos */
 
 .section__planos {
-    font-family: var(--fonte-secundaria);
     background-color: var(--cinza-claro);
     padding: 45px 0 80px 0;
 }
@@ -313,11 +302,6 @@ nav ul li a {
 
 .planos__button-start {
     border: 1px solid var(--planos-cartao-start);
-    background-color: transparent;
-    width: 210px;
-    height: 45px;
-    border-radius: 5px;
-    font-size: 19px;
 }
 
 .planos__vantagens-text {
@@ -350,14 +334,8 @@ nav ul li a {
 }
 
 .planos__button-ultra {
-    width: 210px;
-    height: 45px;
-    background-color: transparent;
     border: 1px solid var(--planos-cartao-ultra);
     color: var(--planos-cartao-ultra);
-    font-size: 19px;
-    font-weight: bold;
-    border-radius: 5px;
 }
 
 .planos__card-mega {
@@ -383,14 +361,18 @@ nav ul li a {
 }
 
 .planos__button-mega {
-    background-color: transparent;
-    font-size: 19px;
-    font-weight: bold;
-    color: var(--planos-cartao-mega);
     border: 1px solid var(--planos-cartao-mega);
-    border-radius: 5px;
+    color: var(--planos-cartao-mega);
+}
+
+.planos__button-start, .planos__button-ultra, .planos__button-mega {
     width: 210px;
     height: 45px;
+    font-size: 19px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: transparent;
+    font-family: var(--fonte-secundaria);
 }
 
 /* Seção Contato */
@@ -399,7 +381,6 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: var(--fonte-secundaria);
     padding-top: 29px;
 }
 
@@ -423,6 +404,7 @@ nav ul li a {
     border-radius: 5px;
     border: 1px solid var(--cinza-escuro);
     color: var(--cinza-escuro);
+    font-family: var(--fonte-secundaria);
 }
 
 /* Seção informações */
@@ -432,7 +414,6 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     padding: 61px 0 25px 0;
-    font-family: var(--fonte-secundaria);
 }
 
 .info__title {
@@ -494,11 +475,6 @@ nav ul li a {
     align-items: center;
     padding: 24px 0 43px 0;
     background-color: var(--bg-rodape);
-    font-family: var(--fonte-secundaria);
-}
-
-.rodape__flex {
-    
 }
 
 .rodape__img {
@@ -531,10 +507,7 @@ nav ul li a {
     .destaques__img01, .destaques__img02 {
         width: 100%;
     }
-
-    
 }
-
 
 @media (min-width: 768px) {
     .header__list {
@@ -606,11 +579,8 @@ nav ul li a {
         align-items: center;
         gap: 7px;
     }
-
     
 }
-
-
 
 @media (min-width: 1024px) {
     
@@ -759,7 +729,6 @@ nav ul li a {
     }
 
     .rodape__list-links {
-        
         align-self: start;
         padding: 0;
     }
