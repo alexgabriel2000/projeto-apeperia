@@ -158,8 +158,8 @@ nav ul li a {
 
 .habilidades__list {
     display: grid;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     grid-template-columns: 75%;
 }
 
@@ -201,34 +201,26 @@ nav ul li a {
 }
 
 .sobre__title {
-    font-family: var(--fonte-primaria);
     font-size: 24px;
-    font-weight: bold;
-    color: var(--cinza-escuro);
+    font-family: var(--fonte-primaria);
     text-align: center;
     padding-bottom: 23px;
+}
+
+.sobre__title, .sobre__text > strong, .sobre__text-format {
+    font-weight: bold;
+    color: var(--cinza-escuro);
 }
 
 .sobre__list {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding-right: 26px;
-    padding-left: 26px;
+    padding: 0 26px;
 }
 
 .sobre__text {
     line-height: 22px;
-}
-
-.sobre__text > strong {
-    font-weight: bold;
-    color: var(--cinza-escuro);
-}
-
-.sobre__text-format {
-    font-weight: bold;
-    color: var(--cinza-escuro);
 }
 
 .sobre__items-imgs {
@@ -244,8 +236,17 @@ nav ul li a {
 /* Section Planos */
 
 .section__planos {
-    background-color: var(--cinza-claro);
     padding: 45px 0 80px 0;
+    background-color: var(--cinza-claro);
+}
+
+.planos__title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: var(--fonte-primaria);
+    color: var(--cinza-escuro);
+    text-align: center;
+    padding-bottom: 23px;
 }
 
 .planos__list {
@@ -256,43 +257,21 @@ nav ul li a {
     padding: 0 37px;
 }
 
-.planos__title {
-    font-size: 24px;
-    font-weight: bold;
-    font-family: var(--fonte-primaria);
-    color: var(--cinza-escuro);
-    text-align: center;
-    padding-bottom: 23px;
-    
-}
+/* Plano Start */
 
-.planos__barra-horizontal {
+.planos__card-start, .planos__card-ultra, .planos__card-mega {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    border: 1px solid var(--azul-claro);
+    padding: 13px 0 16px 0;
+    border-radius: 5px;
+    background-color: var(--branco);
 }
 
 .planos__title-start, .planos__price-start, .planos__button-start {
     color: var(--planos-cartao-start);
     font-weight: bold;
-}
-
-.planos__card-start {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color: var(--branco);
-    padding: 13px 0 16px 0;
-    border-radius: 5px;
-}
-
-.planos__title-start {
-    font-size: 24px;
-}
-
-.planos__price-start {
-    padding-top: 10px;
-    font-size: 3rem;
 }
 
 .planos__align-text {
@@ -304,65 +283,40 @@ nav ul li a {
     border: 1px solid var(--planos-cartao-start);
 }
 
-.planos__vantagens-text {
-    font-size: 15px;
-    line-height: 28px;
-    color: var(--fonte-cinza);
-    text-align: start;
-}
-
-.planos__card-ultra { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 13px 0 16px 0;
-    border-radius: 5px;
-    width: 100%;
-    background-color: var(--branco);
-}
-
-.planos__title-ultra {
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--planos-cartao-ultra);
-}
-
-.planos__price-ultra {
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--planos-cartao-ultra);
-}
+/* Plano Ultra */
 
 .planos__button-ultra {
     border: 1px solid var(--planos-cartao-ultra);
+}
+
+.planos__title-ultra, .planos__price-ultra, .planos__button-ultra {
     color: var(--planos-cartao-ultra);
-}
-
-.planos__card-mega {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 13px 0 16px 0;
-    border-radius: 5px;
-    background-color: var(--branco);
-}
-
-.planos__title-mega {
-    font-size: 24px;
     font-weight: bold;
-    color: var(--planos-cartao-mega);
 }
 
-.planos__price-mega {
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--planos-cartao-mega);
-}
+/* Plano Mega */
 
 .planos__button-mega {
     border: 1px solid var(--planos-cartao-mega);
+}
+
+.planos__title-mega, .planos__price-mega, .planos__button-mega {
     color: var(--planos-cartao-mega);
+    font-weight: bold;
+}
+
+.planos__title-start, .planos__title-ultra, .planos__title-mega {
+    font-size: 24px;
+}
+
+.planos__price-start, .planos__price-ultra, .planos__price-mega {
+    font-size: 3rem;
+    padding-top: 15px;
+}
+
+.planos__barra-horizontal {
+    width: 100%;
+    border: 1px solid var(--azul-claro);
 }
 
 .planos__button-start, .planos__button-ultra, .planos__button-mega {
@@ -370,9 +324,15 @@ nav ul li a {
     height: 45px;
     font-size: 19px;
     border-radius: 5px;
-    font-weight: bold;
     background-color: transparent;
     font-family: var(--fonte-secundaria);
+}
+
+.planos__vantagens-text {
+    font-size: 15px;
+    line-height: 28px;
+    color: var(--fonte-cinza);
+    text-align: start;
 }
 
 /* Seção Contato */
